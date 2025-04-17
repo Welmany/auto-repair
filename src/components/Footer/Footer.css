@@ -1,0 +1,94 @@
+.footer {
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column; 
+
+    background: var(--color-black);
+}
+
+.footer__links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 5rem;
+    padding: 0 2rem;
+}
+
+.footer__links-contact,
+.footer__links-logo,
+.footer__links-work {
+    flex: 1;
+    margin: 1rem;
+    text-align: center;
+}
+
+.footer__links-logo h1 {
+    margin-bottom: 0.75rem;
+}
+
+.footer__links-icons {
+    margin-top: 0.5rem;
+}
+
+/* Icons svg  */
+.footer__links-icons svg  {
+    color: var(--color-white);
+    margin: 0.5rem;
+    font-size: 24px;
+    cursor: pointer;
+    transition: ease .20s;
+}
+
+.footer__links-icons svg:hover {
+    color: var(--color-golden);
+    transform: scale(1.1);
+}
+
+
+.footer__links-work p:nth-child(2n+1){ /*set space for each working hour*/
+    margin-bottom: 1rem;
+}
+
+.footer-headtext {
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    font-weight: 400;
+    letter-spacing: 0.04rem;
+    text-transform: capitalize;
+    font-size: 32px;
+    line-height: 41.6px;
+    margin-bottom: 1rem;
+}
+
+.footer__copyright {
+    margin-bottom: 2rem;
+}
+
+/*
+    Tablet
+ @media screen and (min-width: 767px) and (max-width: 1023px) {
+
+}*/
+
+/*Smartphone*/
+@media screen and (max-width: 767px) {
+
+   .footer__links  {
+        justify-content: center;
+        flex-direction: column;
+   }
+
+   .footer__copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+   }
+
+}
